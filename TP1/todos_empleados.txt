@@ -1,0 +1,48 @@
+-------------------------------------------
+Numero de empleado: 1 Apellido: Silva
+Nombre: Aime
+Edad: 19 DNI: 46749
+-------------------------------------------
+Numero de empleado: 2 Apellido: Jaureguiberry
+Nombre: Tomas
+Edad: 21 DNI: 45356
+-------------------------------------------
+Numero de empleado: 3 Apellido: Carlos Chiara
+Nombre: Carlos
+Edad: 74 DNI: 81234
+-------------------------------------------
+Numero de empleado: 4 Apellido: Mita
+Nombre: Teruggi
+Edad: 76 DNI: 31454
+-------------------------------------------
+Numero de empleado: 5 Apellido: Jaureguiberry
+Nombre: Santiago
+Edad: 49 DNI: 24795
+-------------------------------------------
+Numero de empleado: 6 Apellido: Silva
+Nombre: Maiten
+Edad: 17 DNI: 48141
+-------------------------------------------
+Numero de empleado: 7 Apellido: Jaureguiberry
+Nombre: Andres
+Edad: 43 DNI: 2899
+-------------------------------------------
+Numero de empleado: 8 Apellido: Martinez
+Nombre: Oscar
+Edad: 71 DNI: 18423
+-------------------------------------------
+Numero de empleado: 8 Apellido: Martinez
+Nombre: Oscar
+Edad: 71 DNI: 18423
+-------------------------------------------
+Numero de empleado: 9 Apellido: Rossencraf
+Nombre: Gaspar
+Edad: 59 DNI: 3123
+-------------------------------------------
+Numero de empleado: 10 Apellido: Fernandez
+Nombre: Ramon
+Edad: 72 DNI: 1421
+-------------------------------------------
+Numero de empleado: 11 Apellido: Milei
+Nombre: Puto
+Edad: 57 DNI: 0

@@ -1,0 +1,18 @@
+3 499.00  Samsung
+14 5  bueno bonito barato
+j20
+7 299.00  Xiaomi
+5 10  calidad-precio
+Redmi note
+2 350.00 Motorola
+10 15 ultimo modelo
+G
+6 699.00 LG
+14 5 una caga
+LG
+8 10.10 sin
+1 10 
+descripcion
+11 149.00 poco
+0 10 chinardo
+10

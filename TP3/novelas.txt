@@ -1,0 +1,30 @@
+  DISCLAIMER: Novela Eliminada 
+  Código: -1
+  Género: 
+  Nombre: 
+  Duración: 0.00 minutos
+  Director: 
+  Precio: $0.00
+  --------------------
+  DISCLAIMER: Novela Eliminada 
+  Código: 0
+  Género: The big bang theory
+  Nombre: The big bang theory
+  Duración: 490.00 minutos
+  Director: NSNC
+  Precio: $25.00
+  --------------------
+  Código: 11
+  Género: Ciencia Ficcion
+  Nombre: Star Wars
+  Duración: 349.00 minutos
+  Director: George Lucas
+  Precio: $25.99
+  --------------------
+  Código: 2
+  Género: Drama
+  Nombre: La tumba de las luciernagas
+  Duración: 129.00 minutos
+  Director: Hiyao Miyazaki
+  Precio: $4.59
+  --------------------
