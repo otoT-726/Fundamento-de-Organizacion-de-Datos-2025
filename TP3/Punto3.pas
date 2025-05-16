@@ -38,6 +38,8 @@
 }
 program ejercicio3;
 
+uses crt;
+
 const
 	valor_alto = 9999;
 	
@@ -88,6 +90,7 @@ procedure imprimirNovela(n: novela);
 begin
 	if n.cod > 0 then 
 		with n do begin
+			lowvideo;
 			writeln('Código: ', cod);
 			writeln('Género: ', genero);
 			writeln('Nombre: ', nombre);
@@ -102,12 +105,15 @@ procedure imprimirArchivoNovelas(var archivo : archivo_novelas);
 var
 	n: novela;
 begin
+	clrscr;
 	reset(archivo);
 	leer(archivo, n);
 	while(n.cod <> valor_alto) do begin
+		delay(500);
 		imprimirNovela(n);
 		leer(archivo, n);
 	end;
+	readkey;
 end;
 
 procedure crearArchivo(var archivo: archivo_novelas);
@@ -117,12 +123,14 @@ begin
 	readln(nombre);
 	assign(archivo, nombre);
 	rewrite(archivo);
-	n.cod := 0;
-	n.genero := '';
-	n.nombre := '';
-	n.duracion := 0.0;
-	n.director := '';
-	n.precio := 0.0;
+	with n do begin
+		cod := 0;
+		genero := '';
+		nombre := '';
+		duracion := 0.0;
+		director := '';
+		precio := 0.0;
+	end;
 	write(archivo, n);
 	leerNovela(n);
 	while(n.cod<>0) do begin
@@ -237,6 +245,7 @@ var
 	nombre: string;
 	opcion: integer;
 begin
+	clrscr;
 	writeln('Ingrese el nombre del archivo al que desea acceder.');
 	readln(nombre);
 	assign(archivo, nombre);
@@ -265,8 +274,13 @@ var
 	opcionMenu: integer;
 
 begin
+	
+	textbackground(magenta);
+	textcolor(cyan);
+	SetTextCodePage(Output, 65001);  // 65001 = UTF-8
 
 	repeat
+		clrscr;
 		writeln('-------------------------------------------------------');
 		writeln('--- Menú Principal ---');
 		writeln('1. Crear archivo y cargar novelas');

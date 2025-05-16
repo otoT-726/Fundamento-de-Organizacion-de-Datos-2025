@@ -22,7 +22,7 @@
 }
 program ejercicio4;
 
-const valor_alto = 'ZZZZ';
+const valor_alto = 9999;
 
 type
 
@@ -32,6 +32,14 @@ type
 	end;
 
 	archivoFlores= file of reg_flor;
+
+procedure leer(var a: archivoFlores; var f: reg_flor);
+begin
+	if(not eof(a)) then
+		read(a,f)
+	else
+		f.codigo:= valor_alto;
+end;
 
 procedure agregarFlor(var archivo: archivoFlores; nombre: string; codigo: integer);
 var 	
@@ -70,8 +78,28 @@ begin
 	end;
 end;
 
+procedure eliminarFlor(var archivo: archivoFlores; codigo: integer);
+var 
+	cabecera, n: reg_flor;
+begin
+	leer(archivo, cabecera);
+	leer(archivo, n);
+	while(codigo <> n.codigo) and (n.codigo <> valor_alto) do 
+		leer(archivo, n);
+	if(n.codigo = codigo) then begin
+		n.codigo:= cabecera.codigo;
+		seek(archivo, filepos(archivo)-1);
+		cabecera.codigo := -filepos(archivo);
+		write(archivo, n);
+		seek(archivo, 0);
+		write(archivo, cabecera);
+	end
+	else
+		writeln('Flor no encontrada en el archivo');
+end;
 
-procedure imprimirFlores(var archivo: archivo_flores);
+
+procedure imprimirFlores(var archivo: archivoFlores);
 var f: reg_flor;
 begin
 	leer(archivo, f);
@@ -80,3 +108,13 @@ begin
 		leer(archivo, f);
 	end;
 end;
+
+
+
+
+
+
+begin
+
+
+end.
